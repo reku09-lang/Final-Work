@@ -1,0 +1,360 @@
+@charset "utf-8"
+
+body {
+    font-family: 'Catamaran','Noto Sans JP',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2c2c2c;
+}
+img {
+    max-width: 100%;
+}
+.topPage header {
+    height: 50vh;
+    margin-bottom: 64px;
+}
+.topPage header h1 img {
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+    object-position: 90%;
+}
+.topPage header h1 {
+    text-align: center;
+}
+.linkList {
+    padding: 0 20px;
+}
+.linkList li {
+    margin-bottom: 40px;
+}
+.linkList li a {
+    display: block;
+    background-color: #f5f5f5;
+}
+.linkList li a span {
+    display: block;
+    padding: 12px 15px 10px;
+    font-size: 18px;
+}
+.linkList li a:hover {
+    filter: brightness(95%);
+    transform: scale(1.01);
+    transition: 300ms;
+}
+.linkList img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 90%;
+}
+div {
+    width: 100%;
+    width: 600px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 2;
+    background-color: rgba(192,192,192,0.4);
+    margin: 0 auto;
+    position: absolute;
+    top: 150px;
+    width: 100vw;
+}
+div p {
+  width: 100%;
+    color: #f4f4f4;
+    font-size: 22px;
+}
+.subPage header {
+    border-top: 14px solid #f5f5f5;
+    padding-top: 50px;
+    margin-bottom: 90px;
+    width: 100%;
+}
+.subPage header h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700px;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    
+}
+.subPage header h1 span {
+    background-image: linear-gradient(135deg,#c0c0c0 0%,#064988 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: 100vw;
+}
+.subPage h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: .17em;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #064988;
+    width: 170px;
+    margin: 30px auto;
+}
+main .cTitle {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: .17em;
+    margin-bottom: 60px;
+    width: 350px;
+    margin: 30px auto;
+}
+main .lTitle {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: .17em;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #064988;
+    width: 350px;
+    margin: 30px auto;
+}
+main .under {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: .17em;
+    margin-bottom: 30px;
+    width: 300px;
+    margin: 30px auto;
+}
+.subPage p {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: .05em;
+    line-height: 2;
+}
+.subPage ol li{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: .05em;
+    line-height: 2;
+}
+.subPage h3 {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: .05em;
+    line-height: 2;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}  
+.subPage .textone {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 30px;
+    padding-left: 10px;
+    border-left: 4px double #064988;
+}
+.subPage .texttwo {
+  font-size: 15px;
+  text-align: left;
+  margin-left: 30px;
+  padding-left: 10px;
+  border-left: 4px double #064988;
+  margin-bottom: 40px;
+}
+.subPage .songs {
+  transform: skewX(-10deg);
+  font-size: 14px;
+  text-align: center;
+}
+.subPage .EXLink {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: .05em;
+    line-height: 3;
+}
+.subPage .EXLink a:hover {
+  border-bottom: 1px solid #064988;
+}
+.subPage main {
+    padding: 0 20px;
+}
+footer {
+    /*background: url("/html1/images/klemen-vrankar-lcT_p8kLCsc-unsplash.jpg") no-repeat right top/200px; */
+    margin-top: 60px;
+    padding-top: 68px;
+    margin-bottom: 5px;
+}
+footer p {
+    background-color: #000000;
+}
+footer p img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 90%;
+}
+.onlyPC {
+    display: none;
+}
+@media screen and (min-width:920px) {
+    .topPage {
+        display: flex;
+      }
+      .topPage header {
+        flex-basis: 38%;
+      }
+      .topPage header h1 img {
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+        object-position: 100%;
+      }
+      .topPage main {
+        flex-basis: 62%;
+      }
+      .linkList {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: 0 auto;
+        justify-content: space-around;
+      }
+      .linkList li {
+        flex-basis: 47%;
+        margin-bottom: 20px;
+      }
+      .topPage main {
+        display: flex;
+        align-items: center;
+      }
+      .topPage header {
+        height: 100vh;
+        margin-bottom: 0;
+      }
+      div {
+        width: 547px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+      }
+      .subPage main {
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+      main .under {
+        width: 500px;
+      }
+      main .lTitle {
+        width: 400px;
+      }
+      main .cTitle {
+        width: 500px;
+      }
+      .subPage header h1 {
+        font-size: 60px;
+      }  
+      .subPage h2 {
+        font-size: 34px;
+        margin-bottom: 36px;
+      }
+      .subPage .lead {
+        font-size: 18px;
+        margin-bottom: 160px;
+      }
+      .subPage h3 {
+        font-size: 25px;
+        margin-bottom: 40px;
+      }
+      .onlyPC {
+        display: block;
+      }
+}
+.gMenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+  /* メニューアイコンを画面右上に固定しています */
+  .gMenu .menu-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    padding-top: 5px;
+    height: 12px;
+  }
+  /* メニューアイコン（三本線）の真ん中の線です */
+  .gMenu .menu-icon .navicon {
+    background: #ffc107; /* 色は自由に変更可能です */
+    display: block;
+    height: 2px; /* 太さ */
+    width: 31px; /* 長さ */
+    position: relative;
+    transition: background .4s ease-out; /* 形が変わる時のアニメーション */
+  }
+  /* メニューアイコン（三本線）の上と下の線を疑似要素で追加 */
+  .gMenu .menu-icon .navicon::before,
+  .gMenu .menu-icon .navicon::after {
+    background: #ffc107; /* 色は自由に変更可能です */
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .4s ease-out; /* 形が変わる時のアニメーション */
+    width: 100%;
+  }
+  .gMenu .menu-icon .navicon::before {top: 10px;} /* 位置を上にずらしています */
+  .gMenu .menu-icon .navicon::after {top: -10px;} /* 位置を下にずらしています */
+  /* 表示されるメニューです */
+  .gMenu .menu {
+    background-color: rgba(255,255,255,0.9);
+    overflow: hidden;
+    max-height: 0; /* ★最初は高さを0にして非表示状態に */
+    transition: max-height .6s; /* 表示されるときのアニメーション */
+    text-align: center;
+  }
+  /* メニュー部分のデザインです */
+  .gMenu .menu li:first-of-type {
+    padding-top: 20px;
+  }
+  .gMenu .menu li a {
+    display: block;
+    padding: 24px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .gMenu .menu li a:hover {
+    background-color: #f4f4f4;
+  }
+  /* チェックボックスは常に非表示です */
+  .gMenu .menu-btn {
+    display: none;
+  }
+  /* ▼▼▼以下はチェックボックスがONの時の状態です▼▼▼ */
+  .gMenu .menu-btn:checked ~ .menu {
+    max-height: 338px; /* ★チェックボックスがオンの時高さを338pxにして表示させます */
+    transition: max-height .6s;
+  }
+  /* メニューボタンの中央の線を非表示に */
+  .gMenu .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
+  
+  /* メニューボタンの上下の線を45度傾けて✕印を作ります */
+  .gMenu .menu-btn:checked ~ .menu-icon .navicon::before {transform: rotate(-45deg);top: 0;}
+  .gMenu .menu-btn:checked ~ .menu-icon .navicon::after {transform: rotate(45deg);top: 0;}
+  /* サイトに合わせてオリジナルカスタマイズ */
+  .gMenu .menu-icon {
+    top: 26px;
+  }
+  .gMenu .menu-icon .navicon,
+  .gMenu .menu-icon .navicon::before,
+  .gMenu .menu-icon .navicon::after {
+    background: #333333;
+}    
